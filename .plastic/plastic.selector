@@ -1,0 +1,4 @@
+repository "Spooky scary game@yuriymironov96@cloud"
+  path "/"
+    br "/main"
+    co "/main"
