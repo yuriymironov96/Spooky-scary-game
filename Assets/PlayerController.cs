@@ -95,4 +95,13 @@ public class PlayerController : MonoBehaviour
     {
         animator.SetTrigger("spookAttack");
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("colllision!");
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(collision.gameObject);
+        }
+    }
 }
